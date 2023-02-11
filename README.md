@@ -13,7 +13,7 @@ k8s - Kubernetes <br>
 ### History
 
 Google developed an internal system called `brog` later named as `omega` that deployed & manage thousand google application & service on the cluster.
-IN 2004, google introduced k8s as an open source platform written in "Golang" & later donated to **CNCF**.
+IN 2004, google introduced k8s as an open source platform written in `Golang` & later donated to **CNCF**.
 
 ### Online platform for k8s
 
