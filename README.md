@@ -575,9 +575,9 @@ spec:
                   '-c',
                   'while true; do echo Hello-sp; sleep 5 ; done',
               ]
-env: # List of environment variables to be used inside the pod
-    - name: MYNAME
-      value: SPDEV
+          env: # List of environment variables to be used inside the pod
+               - name: MYNAME
+                 value: SPDEV
 ```
 
 cmds to run above manifest <br>
