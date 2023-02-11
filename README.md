@@ -442,16 +442,16 @@ The kubectl command line tool support several different ways to create & manage 
 3. **Single node etcd, multi Master & multi-worker installation** [Realtime env]
    Here we have multiple master node which works in an High Availability (HA) mode.
 
-# manifest file
+### manifest file
 
 filename.yaml/yml <br>
 pod1.yml
 
 # Working with PODs
 
-# creating pod (POC)
+## creating pod (POC)
 
-vi pod1.yml
+   <b>vi pod1.yml</b>
 
 ```yaml
 ---
@@ -472,7 +472,7 @@ spec:
     restartPolicy: Never # Defaults to Always
 ```
 
-**commands to run above manifest -** <br>
+**commands to run on above manifest -** <br>
 -> :wq <br>
 -> kubectl apply -f pod1.yml <br>
 o/p -> pod/podpoc created <br>
