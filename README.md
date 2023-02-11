@@ -28,7 +28,7 @@ IN 2004, google introduced k8s as an open source platform written in "Golang" & 
 
 ### Kubernetes' installation tool
 
-1. Minicube
+1. Minikube
 2. Kubeadm
 
 ## Problem with just container deployment
@@ -45,9 +45,9 @@ IN 2004, google introduced k8s as an open source platform written in "Golang" & 
 4. Load balancer
 5. Platform independence
 6. Fault tolerance
-7. rollback
-8. container health monitoring
-9. batch execution (one time, sequential, parallel)
+7. Rollback
+8. Container health monitoring
+9. Batch execution (one time, sequential, parallel)
 
 ## Kubernetes vs Docker swam
 
