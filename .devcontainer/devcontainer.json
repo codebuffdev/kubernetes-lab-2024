@@ -1,0 +1,15 @@
+{
+	"customizations": {
+		// Configure properties specific to VS Code.
+		"vscode": {
+			// Add extensions this, when the container is created.
+			"extensions": ["ms-kubernetes-tools.vscode-kubernetes-tools"]
+		}
+	},
+	"postStartCommand": "minikube start",
+	"hostRequirements": {
+		"cpus": 4,
+		"memory": "8gb",
+		"storage": "32gb"
+	}
+}
