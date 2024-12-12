@@ -1,0 +1,26 @@
+apiVersion: v1
+kind: Pod
+metadata:
+    name: pod-demo
+    labels:
+        env: learning
+        app: pod-demo
+        version: v1
+        tier: backend
+        type: microservice
+        component: core
+        lifecycle: development
+        status: active
+        createdBy: codebuffdev
+spec:
+    containers:
+        -   name: c001
+            image: ubuntu
+            command:
+                -   /bin/bash
+                -   -c
+                -   |
+                    while [ true ]; do 
+                        echo "hello world";
+                        sleep 4;
+                    done;
