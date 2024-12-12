@@ -1,0 +1,11 @@
+kind: Pod
+apiVersion: v1
+metadata:
+  name: simple-pod
+  labels: 
+    tier: backend
+spec:
+  containers:
+    - name: ubuntu-c001
+      image: ubuntu
+      command: ["/bin/bash","-c","while [ true ]; do echo Hello, Kubernetes!; sleep 36 ; done"]
