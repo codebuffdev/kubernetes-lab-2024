@@ -1,0 +1,26 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: nginx-deploy
+  labels:
+    tier: learning
+    version: v1
+spec:
+  replicas: 3
+  selector:
+    matchExpressions:
+      - key: tier
+        operator: In
+        values:
+          - backend
+  template:
+    metadata:
+      name: nginx-deploy-pod
+      labels:
+        tier: backend
+    spec:
+      containers:
+        - name: nginx-container-c001
+          image: nginx
+          ports:
+            - containerPort: 80
