@@ -1,0 +1,30 @@
+apiVersion: apps/v1
+kind: ReplicaSet
+metadata:
+    name: my-app-rs
+    labels:
+        tier: backend-ms1
+spec:
+    template:
+        metadata:
+            labels:
+                app: backend-payment-gtway-ms
+                tier: backend-ms1
+        spec:
+            containers:
+            - name: c001
+              image: ubuntu
+              command:
+                  - /bin/bash
+                  - -c
+                  - |
+                      while [ true ]; do
+                      echo "$(date) - Hello, World!";
+                      sleep 1;
+                      done;
+    selector:
+        matchExpressions:
+            -   key: tier
+                operator: In
+                values:
+                    - backend-ms1
